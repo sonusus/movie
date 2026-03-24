@@ -1,0 +1,77 @@
+
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.register-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.register-card h3 {
+  text-align: center;
+  color: #ffcc00;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #fff;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 10px #ffcc00;
+  border-color: #ffcc00;
+}
+
+.btn-warning {
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-warning:hover {
+  background: #ffdd33;
+  transform: translateY(-2px);
+}
+
+a.text-warning {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a.text-warning:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+  .register-card {
+    padding: 1.5rem;
+  }
+}

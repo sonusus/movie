@@ -1,0 +1,135 @@
+
+
+.series-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.series-header {
+  padding: 20px;
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.series-header h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.search-bar input {
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+  width: 100%;
+  max-width: 400px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.genre-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.genre-btn {
+  background-color: #2c2c2c;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.genre-btn:hover {
+  background-color: #e50914;
+  color: #fff;
+}
+
+.genre-btn.active {
+  background-color: #e50914;
+  color: #fff;
+}
+
+.content-wrapper {
+  flex: 1;
+  padding: 20px;
+}
+
+.series-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.series-card {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.series-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 0, 20, 0.4);
+}
+
+.series-card img {
+  width: 100%;
+  display: block;
+}
+
+.series-info {
+  padding: 10px;
+}
+
+.series-info h3 {
+  font-size: 1rem;
+  margin: 0 0 5px;
+}
+
+.series-info p {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin: 0;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 50px;
+  color: #bbb;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  background-color: #1f1f1f;
+  border-top: 1px solid #333;
+}
+
+.bottom-nav button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.bottom-nav button:hover {
+  color: #e50914;
+}
