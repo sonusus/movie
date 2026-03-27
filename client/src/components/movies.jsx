@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Movies.css";
+import "./movies.css";
 
 function Movies() {
   const [movies, setMovies] = useState([]);
